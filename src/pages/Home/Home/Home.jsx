@@ -1,6 +1,8 @@
+import About from "../About/About"
 import Banner from "../Banner/Banner"
 import BookTable from "../BookTable/BookTable"
 import Carosel from "../Carosel/Carosel"
+import Testimonial from "../Testimonial/Testimonial"
 
 const Home = () => {
   const profileCardData = [
@@ -49,12 +51,18 @@ const Home = () => {
   return (
     <div>
       <Banner />
+      <About />
       <Carosel
         title="Crispy, Every Bite Taste"
         dis="POPULAR FOOD ITEMS"
         profileCardData={profileCardData}
       ></Carosel>
       <BookTable />
+      <Testimonial
+        title="Crispy, Every Bite Taste"
+        dis="What Some of my Customers Say"
+        videoData={videoData}
+      />
     </div>
   )
 }
