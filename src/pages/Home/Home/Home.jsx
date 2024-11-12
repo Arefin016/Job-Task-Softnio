@@ -1,7 +1,11 @@
+import Banner from "../Banner/Banner"
+import BookTable from "../BookTable/BookTable"
+
 const Home = () => {
   return (
     <div>
-      <h2>This is Home</h2>
+      <Banner />
+      <BookTable />
     </div>
   )
 }
